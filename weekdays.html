@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weekday calculation</title>
+  <meta charset="UTF-8" >
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <link href='weekdays.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <div id="input-group">
+    <h1>Get weekday for date</h1>
+    <h2 class="date">INPUT DATE</h2>
+    <input type="text" class="two-digit" size="2" placeholder="DD" id="day" autocomplete="off">
+    <input type="text" class="two-digit" size="2" placeholder="MM" id="month">
+    <input type="text" class="four-digit" size="4" placeholder="YYYY" id="year">
+    <br>
+    <br>
+    <span style="color:red" id="result"></span>
+  </div>
+  <button type="button" id="calc">Calculate</button>
+  <br>
+  <br>
+  <div id="error-messages">
+    <span id="error-messages-close">×</span>
+    <span id="error-messages-text">
+    </span>
+  </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="weekdays.js"></script>
+</html>
